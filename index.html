@@ -1,44 +1,61 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <title>ts7ming</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ts7ming</title>
+<meta name="description" content="ts7ming 的个人主页">
+<link rel="stylesheet" href="style.css">
 <script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?f47524ae1153919492a34b1fbdb7de2d";
-  var s = document.getElementsByTagName("script")[0]; 
+  var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-
 </head>
 <body>
-<section id="welcome-hero" class="welcome-hero">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="header-text">
-                    <h2 style="text-transform: lowercase;">hi <span>,</span> i am ts7ming</h2>
-                    <p>不惟下地狱,且常住地狱<br>不惟常住地狱,且常乐地狱<br>不惟常乐地狱,且庄严地狱</p>
-                    <img src="wc.png" alt="wc" style="max-width: 30%; height: auto; margin-top: 20px; filter: brightness(0.5) sepia(1) hue-rotate(180deg) saturate(3);">
-                    <br><br>
-                    <a href="https://github.com/ts7ming" style="font-size:18px;color: #FFFFF0;">GitHub</a>
-                    <a href="https://github.com/ts7ming/CheapETL" style="font-size:18px;color: #FFFFF0;">CheapETL</a>
-                    <a href="https://github.com/ts7ming/SeatunnelExt" style="font-size:18px;color: #FFFFF0;">SeatunnelExt</a>
-                    <br><br>
-                    <a href="https://pyqueen.readthedocs.io/zh-cn/latest/" style="font-size:18px;color: #FFFFF0;">PyQueen</a>
-                    <a href="https://github.com/ts7ming/xxl-job-win" style="font-size:18px;color: #FFFFF0;">XXL-JOB-Win</a>
-                    <a href="https://github.com/ts7ming/X-Lab" style="font-size:18px;color: #FFFFF0;">X-Lab</a>
+<main class="hero">
+  <div class="hero__inner">
 
-                </div><!--/.header-text-->
-            </div><!--/.col-->
-        </div><!-- /.row-->
-    </div><!-- /.container-->
-</section>
+    <header class="intro">
+      <p class="intro__hello">hi<span class="accent">,</span> i am</p>
+      <h1 class="intro__name">ts7ming</h1>
+    </header>
+
+    <div class="ornament" aria-hidden="true"></div>
+
+    <blockquote class="motto">
+      <p>不惟下地狱，且常住地狱</p>
+      <p>不惟常住地狱，且常乐地狱</p>
+      <p>不惟常乐地狱，且庄严地狱</p>
+    </blockquote>
+
+    <figure class="wechat">
+      <img src="wc.png" alt="微信搜一搜：DataScientist">
+    </figure>
+
+    <nav class="links" aria-label="Profiles">
+      <span class="links__label">profiles</span>
+      <a class="chip chip--solid" href="https://github.com/ts7ming">GitHub</a>
+      <a class="chip" href="https://pyqueen.readthedocs.io/zh-cn/latest/">PyQueen</a>
+    </nav>
+
+    <nav class="links" aria-label="Projects">
+      <span class="links__label">projects</span>
+      <a class="chip" href="https://github.com/ts7ming/CheapETL">CheapETL</a>
+      <a class="chip" href="https://github.com/ts7ming/SeatunnelNotify">SeatunnelNotify</a>
+      <a class="chip" href="https://github.com/ts7ming/xxl-job-win">XXL-JOB-Win</a>
+      <a class="chip" href="https://github.com/ts7ming/X-Lab">X-Lab</a>
+    </nav>
+
+  </div><!-- /.hero__inner -->
+
+  <footer class="footer">
+    <p>© 2026 ts7ming</p>
+  </footer>
+</main>
 </body>
-
 </html>
