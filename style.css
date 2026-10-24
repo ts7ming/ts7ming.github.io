@@ -153,8 +153,8 @@ a:focus-visible {
 
 .wechat img {
   display: block;
-  width: min(230px, 68vw);
-  height: auto;
+  width: auto;
+  height: min(200px, 60vw);
   border-radius: 14px;
   box-shadow: 0 16px 44px rgba(0, 0, 0, .38);
   transition: transform .35s ease, box-shadow .35s ease;
