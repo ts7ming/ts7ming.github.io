@@ -24,7 +24,7 @@ var _hmt = _hmt || [];
                 <div class="header-text">
                     <h2 style="text-transform: lowercase;">hi <span>,</span> i am ts7ming</h2>
                     <p>不惟下地狱,且常住地狱<br>不惟常住地狱,且常乐地狱<br>不惟常乐地狱,且庄严地狱</p>
-                    <img src="wc.png" alt="wc" style="max-width: 30%; height: auto; margin-top: 20px; filter: brightness(0.5) sepia(1) hue-rotate(180deg) saturate(3);">
+                    <a class="wc-zoom" href="wc.png" title="点击放大"><img src="wc.png" alt="微信搜一搜：DataScientist"></a>
                     <br><br>
                     <a href="https://github.com/ts7ming" style="font-size:18px;color: #FFFFF0;">GitHub</a>
                     <a href="https://github.com/ts7ming/CheapETL" style="font-size:18px;color: #FFFFF0;">CheapETL</a>
@@ -39,6 +39,29 @@ var _hmt = _hmt || [];
         </div><!-- /.row-->
     </div><!-- /.container-->
 </section>
+<script>
+(function () {
+  var link = document.querySelector('.wc-zoom');
+  if (!link) { return; }
+  var overlay = document.createElement('div');
+  overlay.className = 'wc-overlay';
+  var img = document.createElement('img');
+  img.src = link.getAttribute('href');
+  img.alt = '';
+  overlay.appendChild(img);
+  function close() {
+    if (overlay.parentNode) { overlay.parentNode.removeChild(overlay); }
+  }
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.body.appendChild(overlay);
+  });
+  overlay.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' || e.keyCode === 27) { close(); }
+  });
+})();
+</script>
 </body>
 
 </html>
